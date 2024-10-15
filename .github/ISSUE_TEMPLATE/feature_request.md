@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for the Frost theme
+about: Suggest an idea for the pasigraphy theme
 title: "[Feature Request] "
 labels: enhancement
 assignees: ''

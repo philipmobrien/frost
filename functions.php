@@ -1,14 +1,14 @@
 <?php
 /**
- * This file adds functions to the Frost WordPress theme.
+ * This file adds functions to the pasigraphy WordPress theme.
  *
- * @package Frost
+ * @package pasigraphy
  * @author  WP Engine
  * @license GNU General Public License v3
- * @link    https://frostwp.com/
+ * @link    https://pasigraphywp.com/
  */
 
-if ( ! function_exists( 'frost_setup' ) ) {
+if ( ! function_exists( 'pasigraphy_setup' ) ) {
 
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -21,10 +21,10 @@ if ( ! function_exists( 'frost_setup' ) ) {
 	 *
 	 * @return void
 	 */
-	function frost_setup() {
+	function pasigraphy_setup() {
 
 		// Make theme available for translation.
-		load_theme_textdomain( 'frost', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'pasigraphy', get_template_directory() . '/languages' );
 
 		// Enqueue editor stylesheet.
 		add_editor_style( get_template_directory_uri() . '/style.css' );
@@ -34,13 +34,13 @@ if ( ! function_exists( 'frost_setup' ) ) {
 
 	}
 }
-add_action( 'after_setup_theme', 'frost_setup' );
+add_action( 'after_setup_theme', 'pasigraphy_setup' );
 
 // Enqueue stylesheet.
-add_action( 'wp_enqueue_scripts', 'frost_enqueue_stylesheet' );
-function frost_enqueue_stylesheet() {
+add_action( 'wp_enqueue_scripts', 'pasigraphy_enqueue_stylesheet' );
+function pasigraphy_enqueue_stylesheet() {
 
-	wp_enqueue_style( 'frost', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'pasigraphy', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 
 }
 
@@ -49,25 +49,25 @@ function frost_enqueue_stylesheet() {
  *
  * @since 0.9.2
  */
-function frost_register_block_styles() {
+function pasigraphy_register_block_styles() {
 
 	$block_styles = array(
 		'core/columns' => array(
-			'columns-reverse' => __( 'Reverse', 'frost' ),
+			'columns-reverse' => __( 'Reverse', 'pasigraphy' ),
 		),
 		'core/group' => array(
-			'shadow-light' => __( 'Shadow', 'frost' ),
-			'shadow-solid' => __( 'Solid', 'frost' ),
+			'shadow-light' => __( 'Shadow', 'pasigraphy' ),
+			'shadow-solid' => __( 'Solid', 'pasigraphy' ),
 		),
 		'core/list' => array(
-			'no-disc' => __( 'No Disc', 'frost' ),
+			'no-disc' => __( 'No Disc', 'pasigraphy' ),
 		),
 		'core/quote' => array(
-			'shadow-light' => __( 'Shadow', 'frost' ),
-			'shadow-solid' => __( 'Solid', 'frost' ),
+			'shadow-light' => __( 'Shadow', 'pasigraphy' ),
+			'shadow-solid' => __( 'Solid', 'pasigraphy' ),
 		),
 		'core/social-links' => array(
-			'outline' => __( 'Outline', 'frost' ),
+			'outline' => __( 'Outline', 'pasigraphy' ),
 		),
 	);
 
@@ -83,30 +83,30 @@ function frost_register_block_styles() {
 		}
 	}
 }
-add_action( 'init', 'frost_register_block_styles' );
+add_action( 'init', 'pasigraphy_register_block_styles' );
 
 /**
  * Register block pattern categories.
  *
  * @since 1.0.4
  */
-function frost_register_block_pattern_categories() {
+function pasigraphy_register_block_pattern_categories() {
 
 	register_block_pattern_category(
-		'frost-page',
+		'pasigraphy-page',
 		array(
-			'label'       => __( 'Page', 'frost' ),
-			'description' => __( 'Create a full page with multiple patterns that are grouped together.', 'frost' ),
+			'label'       => __( 'Page', 'pasigraphy' ),
+			'description' => __( 'Create a full page with multiple patterns that are grouped together.', 'pasigraphy' ),
 		)
 	);
 	register_block_pattern_category(
-		'frost-pricing',
+		'pasigraphy-pricing',
 		array(
-			'label'       => __( 'Pricing', 'frost' ),
-			'description' => __( 'Compare features for your digital products or service plans.', 'frost' ),
+			'label'       => __( 'Pricing', 'pasigraphy' ),
+			'description' => __( 'Compare features for your digital products or service plans.', 'pasigraphy' ),
 		)
 	);
 
 }
 
-add_action( 'init', 'frost_register_block_pattern_categories' );
+add_action( 'init', 'pasigraphy_register_block_pattern_categories' );

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header with site title, navigation.
- * Slug: frost/header-default-dark
+ * Slug: pasigraphy/header-default-dark
  * Categories: header
  * Block Types: core/template-part/header
  */

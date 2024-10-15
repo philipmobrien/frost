@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer with text, links.
- * Slug: frost/footer-default
+ * Slug: pasigraphy/footer-default
  * Categories: footer
  * Block Types: core/template-part/footer
  */
@@ -14,7 +14,7 @@
 		<p>&copy; <?php echo esc_html( gmdate( 'Y' ) ); ?> Your Company LLC · <a href="#">Contact Us</a></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:paragraph -->
-		<p><a href="#"><?php echo esc_html__( 'Facebook', 'frost' ); ?></a> · <a href="#"><?php echo esc_html__( 'LinkedIn', 'frost' ); ?></a> · <a href="#"><?php echo esc_html__( 'Instagram', 'frost' ); ?></a></p>
+		<p><a href="#"><?php echo esc_html__( 'Facebook', 'pasigraphy' ); ?></a> · <a href="#"><?php echo esc_html__( 'LinkedIn', 'pasigraphy' ); ?></a> · <a href="#"><?php echo esc_html__( 'Instagram', 'pasigraphy' ); ?></a></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
